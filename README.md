@@ -29,7 +29,7 @@ The task is to build a quadcopter from scratch, implement control and trajectory
 \- The 3D-printed supports and casings are being designed.
 
 ### Sofware
-- Apart from the UWB system, the software developmnet has not yet began.
+- Apart from the UWB system, the software development has not yet began.
 
 ### Modeling
 - The research on drone modeling techniques is being done.
