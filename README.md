@@ -1,3 +1,13 @@
+![Robotics](https://img.shields.io/badge/Robotics-orange)
+![Control Engineering](https://img.shields.io/badge/Control_Engineering-gold)
+![IT](https://img.shields.io/badge/IT-purple)
+![Electronics](https://img.shields.io/badge/Electronics-darkred)
+![Mechatronics](https://img.shields.io/badge/Mechatronics-darkgreen)
+
+
+![Hardware](https://img.shields.io/badge/Hardware-blue)
+![Software](https://img.shields.io/badge/Software-lightblue)
+
 # Design and implementation of a quadrotor with a localization algorithm based on Ultra-Wideband beacons.
 
 This repository is a portfolio regarding the progress of my Bachelor's project at Warsaw University of Technology.
