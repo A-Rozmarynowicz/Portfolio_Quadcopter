@@ -15,11 +15,15 @@ This repository is a portfolio regarding the progress of my Bachelor's project a
 ## About the project
 The task is to build a quadcopter from scratch, implement control and trajectory planning algorithms, synthesize a mathematical model and develop an indoor positioning system. The expected outcome is a functional drone that is able to follow given trajectories.
 
+
+## Note
+The repository with design and source files is not public. However, I am willing to share it with CERN recruiters if requested.
+
 ## Current progress
 
 ### Hardware
 
-- The UWB positioning system has been developed in 98%, and the details can be found in this separate repository: [https://github.com/A-Rozmarynowicz/UWB_Positioning_System](https://github.com/A-Rozmarynowicz/UWB_Positioning_System)
+- The UWB positioning system has been developed in almost a 100%, and the details can be found in this separate repository: [https://github.com/A-Rozmarynowicz/UWB_Positioning_System](https://github.com/A-Rozmarynowicz/UWB_Positioning_System)
 
 <img src="./Images/UWB_PCB_3D_Image.png" alt="./Images/UWB_PCB_3D_Image.png" width="550"/>
 
