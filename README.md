@@ -12,7 +12,6 @@
 
 My Bachelor's project's task is to build a quadcopter from scratch, implement control and trajectory planning algorithms, synthesize a mathematical model, and develop an indoor positioning system. The expected outcome is a functional, maneuverable, and stable drone that is able to follow given trajectories.
 
-**Note: This repository is just a portfolio, but I can share all design and source files with recruiters upon request.**
 
 Development time: from 01.2026 to 02.2027 (expected).
 
@@ -25,6 +24,8 @@ The project is also referred to as "Day One".
     <img alt="Logo" src="Readme_Images\DayOne_Logo_White_on_Github.png" width="450">
   </picture>
 </p>
+
+**Note: This repository is just a portfolio, but I can share all design and source files with recruiters upon request.**
 
 ## Table of contents
 * [Current progress](#current-progress)
