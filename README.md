@@ -8,12 +8,17 @@
 ![Hardware](https://img.shields.io/badge/Hardware-blue)
 ![Software](https://img.shields.io/badge/Software-lightblue)
 
-# Design and implementation of a quadrotor with a localization algorithm based on Ultra-Wideband beacons.
-
-My Bachelor's project's task is to build a quadcopter from scratch, implement control and trajectory planning algorithms, synthesize a mathematical model, and develop an indoor positioning system. The expected outcome is a functional, maneuverable, and stable drone that is able to follow given trajectories.
+# Aerial Robotics Research Platform
 
 
-Development time: from 01.2026 to 02.2027 (expected).
+
+My Bachelor's project's task is to develop a platform for experimentation in flight control, state estimation, feedback control, trajectory planning, and GPS-denied localization.
+
+Rather than relying on an off-the-shelf flight controller, the system is developed from the ground up: from the mechanical and electronics hardware to the embedded software, estimation algorithms, and UWB positioning infrastructure.
+
+The flight-controller is implemented without using any specific libraries for sensors, control, or state estimation; instead, a low-level framework is developed using HAL for STM.
+
+Development time: from 01.2026 to 02.2027 (expected graduation). Then I will continue with the project on my own.
 
 The project is also referred to as "Day One".
 
@@ -35,9 +40,11 @@ The project is also referred to as "Day One".
 
 
 ## Current progress
+Communication with the IMU and magnetometer is implemented. The STM performs necessary initializations, transfers, and data conversions. This is achieved without using any specific libraries for the sensors; instead, I read the datasheets and implement a low-level interface between the MCU and other chips. For the moment, measurements from the IMU are read at 1kHz update rate, and at 100Hz from the magnetometer.
+
+---
 
 The quadcopter has been assembled and it passed all the necessary hardware tests. That means the motors work, all chips are soldered correctly, and nothing is overheating. It lifts at around 35% motor power, and the battery lasts around 5 minutes in that setting. The machine is visible below.
-
 
 <p align="center">
 <img src="./Readme_Images/Q_home.jpg" alt="Quadcopter" width="550"> <br>
@@ -48,8 +55,7 @@ The quadcopter has been assembled and it passed all the necessary hardware tests
 <em>Figure 1: Quadcopter in real life.</em>
  </p>
 
-
-The main PCB, visible in Figure 2, has been soldered manually and tested.
+The main PCB, visible below, has been soldered manually and tested.
 
 <p align="center">
 <img src="./Readme_Images/Soldered_PCB.jpg" alt="Main PCB" width="550"> <br>
@@ -57,7 +63,7 @@ The main PCB, visible in Figure 2, has been soldered manually and tested.
 <em>Figure 2: 3D view of the quadcopter main PCB.</em>
  </p>
 
-The current 3D model of the quadcopter is visible in Figure 3.
+The 3D model of the quadcopter is visible here:
 
 <p align="center">
 <img src="./Readme_Images/Quadcopter_Assembly.png" alt="Quadcopter Render" width="550"> <br>
