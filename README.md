@@ -8,6 +8,12 @@
 ![Hardware](https://img.shields.io/badge/Hardware-blue)
 ![Software](https://img.shields.io/badge/Software-lightblue)
 
+
+<p align="center">
+<img src="./Readme_Images/Q_home.jpg" alt="Quadcopter" width="550"> <br>
+<em>Designed and assembled by me.</em>
+</p>
+
 # Aerial Robotics Research Platform
 
 
@@ -18,7 +24,7 @@ Rather than relying on an off-the-shelf flight controller, the system is develop
 
 The flight-controller is implemented without using any specific libraries for sensors, control, or state estimation; instead, a low-level framework is developed using HAL for STM.
 
-Development time: from 01.2026 to 02.2027 (expected graduation). Then I will continue with the project on my own.
+Development time: from 01.2026 to 02.2027 (expected graduation). After that I will continue with the project anyway.
 
 The project is also referred to as "Day One".
 
@@ -33,26 +39,81 @@ The project is also referred to as "Day One".
 **Note: This repository is just a portfolio, but I can share all design and source files with recruiters upon request.**
 
 ## Table of contents
+* [Presentation](#presentation)
 * [Current progress](#current-progress)
 * [General Information](#general-information)
 * [UWB Positioning System](#uwb-positioning-system)
 * [Technologies Used](#technologies-used)
 
+## Presentation
 
-## Current progress
-Communication with the IMU and magnetometer is implemented. The STM performs necessary initializations, transfers, and data conversions. This is achieved without using any specific libraries for the sensors; instead, I read the datasheets and implement a low-level interface between the MCU and other chips. For the moment, measurements from the IMU are read at 1kHz update rate, and at 100Hz from the magnetometer.
+Below you can see pictures from the development process.
 
----
-
-The quadcopter has been assembled and it passed all the necessary hardware tests. That means the motors work, all chips are soldered correctly, and nothing is overheating. It lifts at around 35% motor power, and the battery lasts around 5 minutes in that setting. The machine is visible below.
+**Note: I have designed and assembled mechanical and electronic components listed below by myself:**
+- main PCB: designed and soldered manually
+- rotor guards and landing legs
+- main carbon chassis
+- transparent cover for the PCB
+- supports and the uppermost cover for the PCB
+- a battery case that allows for quick batteries switch
+- ESC cover at the bottom
 
 <p align="center">
-<img src="./Readme_Images/Q_home.jpg" alt="Quadcopter" width="550"> <br>
-<img src="./Readme_Images/Q_red.jpg" alt="Quadcopter" width="300">
-<img src="./Readme_Images/Q_top.jpg" alt="Quadcopter" width="300"> <br>
+<img src="./Readme_Images/Q_front_no_prop.jpg" alt="Quadcopter" width="550"> <br>
+<img src="./Readme_Images/Q_red.jpg" alt="Quadcopter" width="550">
+<img src="./Readme_Images/Q_top.jpg" alt="Quadcopter" width="550"> <br>
 <img src="./Readme_Images/Q_front_prop.jpg" alt="Quadcopter" width="550"> <br>
 <img src="./Readme_Images/Q_side.jpg" alt="Quadcopter" width="550"> <br>
 <em>Figure 1: Quadcopter in real life.</em>
+ </p>
+
+<p align="center">
+<img src="./Readme_Images/Soldered_PCB.jpg" alt="Main PCB" width="550"> <br>
+<img src="./Readme_Images/PCB_2.jpg" alt="Main PCB" width="550"> <br>
+<em>Figure 2: Main PCB.</em>
+ </p>
+
+<p align="center">
+<img src="./Readme_Images/Quadcopter_Assembly.png" alt="Quadcopter Render" width="550"> <br>
+<img src="./Readme_Images/Quadcopter_Front_Render.png" alt="Quadcopter Render" width="550"> <br>
+
+<em>Figure 3: 3D models.</em>
+ </p>
+
+
+## Current progress
+<p align="center">
+<em>November 2026:</em>
+ </p>
+
+State estimation is being implemented. I have derived/noted all necessary matrix equations for linear and angular motion. Now I will implement Kalman Filter in a low-level framework.
+
+---
+
+<p align="center">
+<em>October 2026:</em>
+</p>
+
+Communication with the IMU and magnetometer is implemented. The STM performs necessary initializations, transfers, and data conversions. This is achieved without using any specific libraries for the sensors; instead, I read the datasheets and implement a low-level interface between the MCU and other chips. For the moment, measurements from the IMU are read at a 1kHz update rate, and at 100Hz from the magnetometer.
+
+Ground station is complete. It consists of a MATLAB program connected to an ESP32 via USB. It allows for:
+- fine-tuning position estimation of the lighthouses,
+- changing parameters of the process,
+- general communication with the drone and lighthouses.
+
+---
+
+<p align="center">
+<em>September 2026:</em>
+ </p>
+
+
+The quadcopter has been assembled and it passed all the necessary hardware tests. That means the motors work, all chips are soldered correctly, and nothing is overheating. It lifts at around 35% motor power, and the battery lasts around 5 minutes in that setting.
+
+---
+
+<p align="center">
+<em>July 2026:</em>
  </p>
 
 The main PCB, visible below, has been soldered manually and tested.
@@ -76,8 +137,8 @@ The 3D model of the quadcopter is visible here:
 ### Control Engineering
 - Implementing a:
     - cascade 4-loop PID controller,
-    - Kalman filter state estimator.
-    - If time allows: polynomial decoupled trajectory planning based on given setpoints,
+    - Kalman filter state estimator,
+    - If time allows: polynomial decoupled trajectory planning based on given setpoints.
 - Utilizing quaternions for attitude representation enabling more stable orientation control.
 - If time allows: synthesizing a mathematical model of the drone to enable tuning the algorithms in simulation.
 - Enabling manual override of the speed or attitude commands.
@@ -95,11 +156,13 @@ The 3D model of the quadcopter is visible here:
 
 
 ### Mechanics
-- Designing a custom:
+- Designing custom:
     - carbon base plate for the robot,
     - housing for the PCBs,
     - shielding frame around the propellers,
     - battery slot.
+- The rotor guards and landing legs have been prototyped a few times to assure they could protect rotors during crash.
+- The battery slot was designed with care to assure quick and comfortable battery replacement. It has a dedicated recess for a finger to grab the battery. Also, the battery does not jam or get stuck by its wires when removing.
 - Total weight turned out to be 242 grams, which fits within the constraints set by the propellers' thrust: the drone lifts at around 35% motor power.
 
 ## UWB Positioning System
