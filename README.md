@@ -76,9 +76,20 @@ Below you can see pictures from the development process.
 <p align="center">
 <img src="./Readme_Images/Quadcopter_Assembly.png" alt="Quadcopter Render" width="550"> <br>
 <img src="./Readme_Images/Quadcopter_Front_Render.png" alt="Quadcopter Render" width="550"> <br>
+<img src="./Readme_Images/Main_PCB_3D.png" alt="Main PCB" width="550"> <br>
 <em>3D models.</em>
  </p>
 
+
+<p align="center">
+<img src="./Readme_Images/Parts/Battery_Case.png" alt="3D model" width="225">
+<img src="./Readme_Images/Parts/Chassis.png" alt="3D model" width="225"> <br>
+<img src="./Readme_Images/Parts/Transparent_Cover.png" alt="3D model" width="225">
+<img src="./Readme_Images/Parts/Rotor_Guards.png" alt="3D model" width="225"> <br>
+<img src="./Readme_Images/Parts/ground_plus_topcover.png" alt="3D model" width="225">
+<img src="./Readme_Images/Parts/Bottom_First_Cover.png" alt="3D model" width="225"> <br>
+<em>3D models of individual parts.</em>
+ </p>
 
 ## Current progress
 <p align="center">
@@ -115,35 +126,8 @@ The quadcopter has been assembled and it passed all the necessary hardware tests
 <em>July 2026:</em>
  </p>
 
-The main PCB, visible below, has been soldered manually and tested.
-
-<p align="center">
-<img src="./Readme_Images/Soldered_PCB.jpg" alt="Main PCB" width="550"> <br>
-<img src="./Readme_Images/Main_PCB_3D.png" alt="Main PCB" width="550"> <br>
-<em>3D view of the quadcopter main PCB.</em>
- </p>
-
-The 3D model of the quadcopter is visible here:
-
-<p align="center">
-<img src="./Readme_Images/Quadcopter_Assembly.png" alt="Quadcopter Render" width="550"> <br>
-<img src="./Readme_Images/Quadcopter_Front_Render.png" alt="Quadcopter Render" width="550"> <br>
-<em>3D model of the quadcopter.</em>
- </p>
-
-The 3D models of individual parts are shown below:
-
-<p align="center">
-<img src="./Readme_Images/Parts/Battery_Case.png" alt="3D model" width="550"> <br>
-<img src="./Readme_Images/Parts/Chassis.png" alt="3D model" width="550"> <br>
-<img src="./Readme_Images/Parts/Transparent_Cover.png" alt="3D model" width="550"> <br>
-<img src="./Readme_Images/Parts/Rotor_Guards.png" alt="3D model" width="550"> <br>
-<img src="./Readme_Images/Parts/ground_plus_topcover.png" alt="3D model" width="550"> <br>
-<img src="./Readme_Images/Parts/Bottom_First_Cover.png" alt="3D model" width="550"> <br>
-<em>3D models.</em>
- </p>
-
-
+The main PCB has been soldered manually and tested. The electronics schematic is avaiable in this file:
+[PCB_Schematic/Quadcopter_Main_PCB_Schematic.pdf](./PCB_Schematic/Quadcopter_Main_PCB_Schematic.pdf)
 
 ## General information
 
