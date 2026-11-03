@@ -26,6 +26,8 @@ The flight-controller is implemented without using any specific libraries for se
 
 Development time: from 01.2026 to 02.2027 (expected graduation). After that I will continue with the project anyway.
 
+I don't use much AI in my work.
+
 The project is also referred to as "Day One".
 
 <p align="center">
