@@ -51,6 +51,8 @@ The project is also referred to as "Day One".
 
 **You can view the 3D model online in your browser by following this link: [https://mypw2768.autodesk360.com/g/shares/SH90d2dQT28d5b60281158d2a27c57336ded](https://mypw2768.autodesk360.com/g/shares/SH90d2dQT28d5b60281158d2a27c57336ded)**
 
+---
+
 Below you can see pictures from the development process.
 
 *Note: I have designed and assembled components listed below by myself:*
